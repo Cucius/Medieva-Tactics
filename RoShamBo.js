@@ -12,7 +12,7 @@ battle = function () {
   if (userWeapon === "shield" || userWeapon == "r") {
     userWeapon = "Shield";
     console.log("Shield");
-  } else if (userWeapon === "Dagger" || userWeapon == "p") {
+  } else if (userWeapon === "dagger" || userWeapon == "p") {
     userWeapon = "Dagger";
     console.log("Dagger");
   } else if (userWeapon === "bow" || userWeapon == "s") {
@@ -28,9 +28,26 @@ battle = function () {
   var smartChoice = trainingDummy[Math.floor(Math.random() * trainingDummy.length)];
   console.log(smartChoice);
 
-  alert("Training Dummy has chosen " + smartChoice + "!");
+  // convert word to emoji
+  emojifi = function (weapon) {
+    switch (weapon) {
+      case "Dagger":
+        return "🗡";
+      case "Shield":
+        return "🛡";
+      default:
+        return "🏹";
+    }
+  };
 
-  alert(userWeapon + " vs " + smartChoice);
+  var botEmoji = emojifi(smartChoice);
+  var userEmoji = emojifi(userWeapon);
+
+  alert("Training Dummy has chosen " + botEmoji + "!");
+
+  //display battle
+  alert("User: " + userEmoji + " vs " + "Bot: " + botEmoji);
+
   //Possible results
   var battleResult = ["You are Victorious!", "You have been Defeated!", "Losses on both sides, Draw!"];
 
@@ -69,10 +86,11 @@ battle = function () {
     battle();
   } else {
     alert("Fair thee well");
+    alert("Wins: " + wins + " \nLosses: " + losses + "\nDraws: " + draw);
+    return;
   }
-
-  return alert("Wins: " + wins + " \nLosses: " + losses + "\nDraws: " + draw);
 
   // console.log ("linked")
 };
+
 battle();
