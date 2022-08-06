@@ -1,0 +1,15 @@
+Sheild(Rock), Sword(Paper), Bow(Scissors)
+
+logic of the game - user selects a value and the computer will select random value
+
+how does a user win this game?
+
+Sheild(R) beats Bow(S)
+Bow(S) beats Sword(P)
+Sword(P) beats Sheild(R)
+
+computer selections to have random values
+
+var computerChoice = ["R","P","S"]
+math.floor math.random
+
