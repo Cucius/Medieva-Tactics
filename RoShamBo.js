@@ -30,6 +30,7 @@ battle = function () {
 
   alert("Training Dummy has chosen " + smartChoice + "!");
 
+  alert(userWeapon + " vs " + smartChoice);
   //Possible results
   var battleResult = ["You are Victorious!", "You have been Defeated!", "Losses on both sides, Draw!"];
 
