@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box; 
+    font-family: 'Pacifico', cursive;
+}
+   body {
+     margin: 0;
+   }
+   #main {
+
+
+     display: flex;
+     min-height: calc(100vh - 10vh);
+   }
+ 
+   #main > nav{
+       flex:0 0 50vw;
+     background: #ed2839;
+   }
+   #main > article {
+     flex: 1;
+     background: #c0c0c0 url(https://www.nicepng.com/png/full/62-625561_medieval-swords-crossed-sword-clipart.png) center no-repeat;
+     position: relative;
+     background-size: contain;
+   }
+   #main > aside {
+     flex: 0 0 50vw;
+     background: #318ce7;
+     /* background: #006b3d; */
+   }
+ //  #main > nav {
+     order: -1;
+   }
+ footer, article, nav, aside {
+     padding: 1em;
+   }
+ footer {
+     background: #e5b73b;
+     height: 10vh;
+   }
+
+
+   .btn-group button {
+    display: inline-block;
+    background-color: #04AA6D; /* Green background */
+    border: 5px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    margin: 20px;
+    border-radius: 35%;
+    /* transform:  translate(-50%, -50%); */
+   margin-left: 18%; 
+
+  }
+  

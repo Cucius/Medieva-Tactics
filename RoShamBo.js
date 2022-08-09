@@ -6,7 +6,7 @@ var draw = 0;
 
 battle = function () {
   //starting prompt
-  var userWeapon = prompt("Please choose Shield(R) Dagger(P) or Bow(S)").toLowerCase();
+  var userWeapon = prompt("Please choose 🛡 Shield(R) 🗡 Dagger(P) or 🏹 Bow(S)").toLowerCase();
 
   //user input of Shield, Dagger or Bow
   if (userWeapon === "shield" || userWeapon == "r") {

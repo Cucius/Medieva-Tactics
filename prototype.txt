@@ -1,0 +1,53 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+   box-sizing: border-box; 
+  }
+  body {
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    min-height: calc(100vh - 10vh);
+  }
+
+  #main > nav{
+  	flex:0 0 50vw;
+    background: red;
+  }
+  #main > article {
+    flex: 1;
+   position:fixed;
+   left: 31.25rem;
+    top: 20rem;
+    background: white;
+    border-radius:50%;
+    
+  }
+  #main > aside {
+    flex: 0 0 50vw;
+    background: blue;
+  }
+//  #main > nav {
+    order: -1;
+  }
+footer, article, nav, aside {
+    padding: 1em;
+  }
+footer {
+    background: yellowgreen;
+    height: 10vh;
+  }
+
+</style>
+<body>
+  
+  <div id="main">
+ 
+    <nav>Nav</nav>
+       <article>Article</article>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
