@@ -13,17 +13,17 @@
    }
  
    #main > nav{
-       flex:0 0 50vw;
+       flex:1;
      background: #ed2839;
    }
    #main > article {
-     flex: 1;
+     flex: 0;
      background: #c0c0c0 url(https://www.nicepng.com/png/full/62-625561_medieval-swords-crossed-sword-clipart.png) center no-repeat;
      position: relative;
      background-size: contain;
    }
    #main > aside {
-     flex: 0 0 50vw;
+     flex: 1;
      background: #318ce7;
      /* background: #006b3d; */
    }
