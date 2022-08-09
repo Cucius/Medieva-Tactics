@@ -1,55 +1,57 @@
 * {
-    box-sizing: border-box; 
-    font-family: 'Pacifico', cursive;
+  box-sizing: border-box;
+  font-family: "Pacifico", cursive;
 }
-   body {
-     margin: 0;
-   }
-   #main {
 
+body {
+  margin: 0;
+}
 
-     display: flex;
-     min-height: calc(100vh - 10vh);
-   }
- 
-   #main > nav{
-       flex:1;
-     background: #ed2839;
-   }
-   #main > article {
-     flex: 0;
-     background: #c0c0c0 url(https://www.nicepng.com/png/full/62-625561_medieval-swords-crossed-sword-clipart.png) center no-repeat;
-     position: relative;
-     background-size: contain;
-   }
-   #main > aside {
-     flex: 1;
-     background: #318ce7;
-     /* background: #006b3d; */
-   }
- //  #main > nav {
-     order: -1;
-   }
- footer, article, nav, aside {
-     padding: 1em;
-   }
- footer {
-     background: #e5b73b;
-     height: 10vh;
-   }
+main {
+  display: flex;
+  min-height: calc(100vh - 10vh);
+}
 
+main > .user {
+  flex: 1;
+  background: #ed2839;
+}
 
-   .btn-group button {
-    display: inline-block;
-    background-color: #04AA6D; /* Green background */
-    border: 5px solid green; /* Green border */
-    color: white; /* White text */
-    padding: 10px 24px; /* Some padding */
-    cursor: pointer; /* Pointer/hand icon */
-    margin: 20px;
-    border-radius: 35%;
-    /* transform:  translate(-50%, -50%); */
-   margin-left: 18%; 
+main > .status {
+  flex: 0;
+  background: #c0c0c0 url("../Images/Cross_Swords.png") center no-repeat;
+  position: relative;
+  background-size: contain;
+}
 
-  }
-  
+main > .comp {
+  flex: 1;
+  background: #318ce7;
+  /* background: #006b3d; */
+}
+
+main > .user {
+  order: -1;
+}
+
+footer, .status, .user, .comp {
+  padding: 1em;
+}
+
+footer {
+  background: #e5b73b;
+  height: 10vh;
+}
+
+.btn-group button {
+  display: inline-block;
+  background-color: #04aa6d; 
+  border: 5px solid green; 
+  color: white; 
+  padding: 10px 24px; 
+  cursor: pointer; 
+  margin: 20px;
+  border-radius: 35%;
+  min-width: 75px;
+  min-height: 75px;
+}
